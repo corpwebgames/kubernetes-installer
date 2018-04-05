@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 RUN apt-get update \
-	&& apt-get install -y python-pip unzip curl nano less openssh-client \
+	&& apt-get install -y python-pip unzip curl nano less openssh-client git \
 	&& pip install awscli \
 	&& curl -LO https://github.com/kubernetes/kops/releases/download/$(curl -s https://api.github.com/repos/kubernetes/kops/releases/latest | grep tag_name | cut -d '"' -f 4)/kops-linux-amd64 \
  	&& chmod +x kops-linux-amd64 \

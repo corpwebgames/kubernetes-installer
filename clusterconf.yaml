@@ -78,8 +78,8 @@ metadata:
   name: nodes
 spec:
   image: kope.io/k8s-1.8-debian-jessie-amd64-hvm-ebs-2018-02-08
-  machineType: c4.xlarge
-  maxSize: 1
+  machineType: r4.xlarge
+  maxSize: 2
   minSize: 1
   maxPrice: "0.1"
   nodeLabels:
